@@ -11,15 +11,21 @@ pip install -r requirements.txt
 
 Note: `easyocr` often requires `torch` (CPU or GPU build). See EasyOCR docs if installation fails.
 
-## Usage
-1. Make sure the Wordle website is open and the site theme is set to dark (script compares RGB tile colors).
-2. Run:
+## How to Use
+1. Open the Wordle website in your browser and set the theme to dark.
+2. In your terminal, run:
 
 ```bash
 python main.py
 ```
 
-The script will take screenshots of the board, run OCR, and type guesses automatically.
+3. **Important:** As soon as you run the script, go to the Wordle webpage and click anywhere on the screen. This gives focus to the browser window so the script can type the words.
+4. The script will then automatically take screenshots, run OCR on the tiles, and type guesses.
+
+## Documentation
+I documented the entire process in a YouTube video:
+
+**https://youtu.be/aBI6rF-dQSA**
 
 ## Important Notes / Configuration
 - Supports both the New York Times Wordle and the unlimited Wordle, but you must adjust the RGB color checks in `main.py` when switching variants because their tile colors differ.
