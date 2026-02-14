@@ -1,0 +1,6 @@
+pyscreenshot
+easyocr
+opencv-python
+keyboard
+requests
+numpy
